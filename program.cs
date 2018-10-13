@@ -34,3 +34,33 @@
             }
             return result;
         }
+
+ static void Main(string[] args)
+        {
+
+
+
+            string sWord;
+            int iResult = 0;
+            Console.WriteLine("Type the word:");
+
+            sWord = Console.ReadLine();
+
+            string[] arr = new string[1];
+
+            //for (int i = 0; i < sWord.Length; i++)
+            //{
+            arr[0] = sWord;//.Substring(i, 1);
+            //}
+
+            int[] result = usernameDisparity(arr);
+            foreach (int value in result)
+            {
+                iResult += value;
+            }
+            Console.WriteLine("The result is: " + iResult.ToString());
+            Console.ReadLine();
+
+
+
+        }
